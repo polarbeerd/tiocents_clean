@@ -9,10 +9,10 @@ export default function HomePage() {
       {/* Dreamy Quote at the Top */}
       <div className="absolute top-12 text-center">
         <h1 className="text-4xl md:text-5xl font-light tracking-wide mb-4">
-          &quot;Where Ideas Float Freely.&quot;{" "}
+          &quot;Where Ideas Float Freely&quot;{" "}
         </h1>
         <p className="text-gray-400 text-sm md:text-base">
-          Enter the space where thoughts, creations, and dreams connect.
+          Enter the space where thoughts, creations, and dreams connect
         </p>
       </div>
 
@@ -28,7 +28,7 @@ export default function HomePage() {
             TioCents
           </h2>
           <p className="text-gray-400 group-hover:text-gray-300 text-sm">
-            Explore ideas, writings, and knowledge.
+            Explore ideas, writings, and knowledge
           </p>
         </Link>
 
@@ -42,7 +42,7 @@ export default function HomePage() {
             About Me (In Progress)
           </h2>
           <p className="text-gray-400 group-hover:text-gray-300 text-sm">
-            Who I am and what I create.
+            Who I am and what I create
           </p>
         </Link>
 
@@ -56,7 +56,7 @@ export default function HomePage() {
             Side Projects (In Progress)
           </h2>
           <p className="text-gray-400 group-hover:text-gray-300 text-sm">
-            Code, tools, experiments and ideas.
+            Code, tools, experiments and ideas
           </p>
         </Link>
       </div>
