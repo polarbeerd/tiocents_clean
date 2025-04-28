@@ -7,6 +7,7 @@ import MDXComponents from "@/components/MDXComponents";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/getAllPosts"; // moved helper here
+import Comments from "@/components/Comments";
 
 // Static params
 export async function generateStaticParams() {
@@ -84,7 +85,13 @@ export default async function PostPage({ params }) {
       <article className="prose prose-invert prose-lg leading-relaxed mx-auto mb-20">
         {content}
       </article>
-
+      {/* Comments */}
+      <section className="mt-20">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Join the Discussion
+        </h2>
+        <Comments />
+      </section>
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
         <section className="mt-20">
