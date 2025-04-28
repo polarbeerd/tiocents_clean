@@ -39,7 +39,7 @@ export default function HomePage() {
         >
           <User className="w-12 h-12 mb-4 text-gray-300 group-hover:text-white transition-colors" />
           <h2 className="text-3xl font-semibold group-hover:text-white transition-colors mb-2">
-            About Me
+            About Me (In Progress)
           </h2>
           <p className="text-gray-400 group-hover:text-gray-300 text-sm">
             Who I am and what I create.
@@ -53,7 +53,7 @@ export default function HomePage() {
         >
           <Hammer className="w-12 h-12 mb-4 text-gray-300 group-hover:text-white transition-colors" />
           <h2 className="text-3xl font-semibold group-hover:text-white transition-colors mb-2">
-            Side Projects
+            Side Projects (In Progress)
           </h2>
           <p className="text-gray-400 group-hover:text-gray-300 text-sm">
             Code, tools, experiments and ideas.
