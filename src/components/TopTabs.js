@@ -59,7 +59,7 @@ export default function TopTabs({ posts = [] }) {
       {selectedAuthor && (
         <div className="text-center mb-6">
           <Link
-            href="/posts"
+            href="/tiocents"
             className="inline-block bg-white text-black px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition-colors"
           >
             Clear Author Filter
@@ -73,7 +73,7 @@ export default function TopTabs({ posts = [] }) {
           filteredPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/posts/${post.slug}`}
+              href={`/tiocents/${post.slug}`}
               className="bg-[#1C1C1F] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:bg-[#27272a] transition-all duration-150"
             >
               {/* Cover Image */}

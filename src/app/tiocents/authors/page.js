@@ -27,7 +27,7 @@ export default function AuthorsPage() {
         {authors.map((author) => (
           <Link
             key={author.name}
-            href={`/posts?author=${encodeURIComponent(author.name)}`}
+            href={`/tiocents?author=${encodeURIComponent(author.name)}`}
             className="bg-[#1C1C1F] rounded-2xl p-6 flex flex-col items-center text-center shadow hover:shadow-lg transition-all duration-150"
           >
             <Image

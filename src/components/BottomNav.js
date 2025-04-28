@@ -36,8 +36,8 @@ export default function BottomNav() {
   }
 
   const navItems = [
-    { label: "Home", href: "/posts", icon: Home },
-    { label: "Authors", href: "/authors", icon: Users },
+    { label: "Home", href: "/tiocents", icon: Home },
+    { label: "Authors", href: "/tiocents/authors", icon: Users },
   ];
 
   return (

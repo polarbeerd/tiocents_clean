@@ -11,7 +11,7 @@ import Comments from "@/components/Comments";
 
 // Static params
 export async function generateStaticParams() {
-  const postsDirectory = path.join(process.cwd(), "src/app/posts");
+  const postsDirectory = path.join(process.cwd(), "src/app/tiocents/posts");
   const filenames = fs.readdirSync(postsDirectory);
 
   return filenames
@@ -24,7 +24,7 @@ export async function generateStaticParams() {
 // Main page
 export default async function PostPage({ params }) {
   const { slug } = params;
-  const postsDirectory = path.join(process.cwd(), "src/app/posts");
+  const postsDirectory = path.join(process.cwd(), "src/app/tiocents/posts");
   const fullPath = path.join(postsDirectory, `${slug}.mdx`);
 
   let fileContents;
