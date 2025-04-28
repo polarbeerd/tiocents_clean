@@ -2,7 +2,8 @@ import Link from "next/link";
 import "./globals.css";
 import BottomNav from "@/components/BottomNav";
 import { Suspense } from "react";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 export const metadata = {
   title: "TioCents",
   description: "Explore new ideas and stories.",
@@ -23,6 +24,9 @@ export default function RootLayout({ children }) {
         <Suspense fallback={null}>
           <BottomNav />
         </Suspense>
+        <Analytics />
+
+        <SpeedInsights />
       </body>
     </html>
   );
