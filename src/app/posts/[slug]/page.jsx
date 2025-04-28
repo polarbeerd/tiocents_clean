@@ -69,7 +69,6 @@ export default async function PostPage({ params }) {
         <h1 className="text-5xl font-extrabold leading-tight tracking-tight mb-6">
           {data.title}
         </h1>
-
         <div className="text-gray-400 text-sm">
           {data.authorName ? data.authorName : "Anonymous"} •{" "}
           {new Date(data.date).toLocaleDateString("en-US", {

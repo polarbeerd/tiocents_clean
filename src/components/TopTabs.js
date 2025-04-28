@@ -76,38 +76,53 @@ export default function TopTabs({ posts = [] }) {
               href={`/posts/${post.slug}`}
               className="bg-[#1C1C1F] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:bg-[#27272a] transition-all duration-150"
             >
+              {/* Cover Image */}
               <div className="relative w-full h-48">
                 <Image
                   src={post.coverImage}
                   alt={post.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-t-2xl"
+                  fill
+                  className="object-cover rounded-t-2xl"
                   priority
                 />
               </div>
-              <div className="p-4">
-                <h2 className="text-2xl font-semibold">{post.title}</h2>
-                <p className="text-gray-400 text-sm">
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </p>
-                <div className="flex items-center gap-3 mt-3">
+
+              {/* Content */}
+              <div className="p-5">
+                {/* Title */}
+                <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+
+                {/* Author Row */}
+                <div className="flex items-center gap-3 text-gray-400 text-sm mb-2">
+                  {/* Author Image */}
                   <Image
                     src={post.authorImage}
                     alt={post.authorName}
-                    width={32}
-                    height={32}
+                    width={24}
+                    height={24}
                     className="rounded-full object-cover"
                   />
-                  <span className="text-sm text-gray-400">
-                    {post.authorName}
+
+                  {/* Name */}
+                  <span>{post.authorName}</span>
+                  <span>•</span>
+
+                  {/* Date */}
+                  <span>
+                    {new Date(post.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}
                   </span>
+                  <span>•</span>
+
+                  {/* Estimated Reading Time */}
+                  <span>{post.readingTime || 3} min read</span>
                 </div>
-                <p className="text-gray-300 mt-2">{post.description}</p>
+
+                {/* Description */}
+                <p className="text-gray-300 text-sm">{post.description}</p>
               </div>
             </Link>
           ))
