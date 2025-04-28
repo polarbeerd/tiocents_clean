@@ -14,9 +14,11 @@ export async function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), "src/app/posts");
   const filenames = fs.readdirSync(postsDirectory);
 
-  return filenames.map((filename) => ({
-    slug: filename.replace(/\.mdx$/, ""),
-  }));
+  return filenames
+    .filter((filename) => filename.endsWith(".mdx")) // only .mdx posts
+    .map((filename) => ({
+      slug: filename.replace(/\.mdx$/, ""),
+    }));
 }
 
 // Main page
