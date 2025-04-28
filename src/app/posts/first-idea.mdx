@@ -52,31 +52,7 @@ In one of his experiments, James Hoffmann prepared pour-overs using different ty
 
 ## My Daily Coffee Routine and a Surprising Discovery
 
----
-
-<div style={{ display: 'flex', justifyContent: 'space-around', gap: '2rem' }}>
-
-<div>
-  <h3 style={{ color: "purple" }}>Espresso</h3>
-  <ul>
-    <li>18g in</li>
-    <li>36g out</li>
-    <li>21% extraction</li>
-    <li>110mg CAFFEINE</li>
-  </ul>
-</div>
-
-<div>
-  <h3 style={{ color: "purple" }}>Pour Over</h3>
-  <ul>
-    <li>18g in</li>
-    <li>300g out</li>
-    <li>21% extraction</li>
-    <li>170mg CAFFEINE</li>
-  </ul>
-</div>
-
-</div>
+<hr className="my-6 border-gray-600" />
 
 As an espresso lover (and maybe I'll create a guide later on how to get the best-tasting, budget-friendly espresso at home if anyone’s interested), I usually start my day with two double-shot espressos. Occasionally, if I have some particularly aromatic beans around, I'll prepare a V60 pour-over instead.
 
@@ -84,6 +60,27 @@ But something always baffled me: the different neuroeffects I felt after drinkin
 
 Fortunately, James Hoffmann’s experiments revealed that even when using the same amount of coffee grounds, pour-overs contain significantly more caffeine than espresso.
 
+<div className="flex justify-around gap-8 flex-wrap">
+  <div>
+    <h3 className="text-purple-500 font-bold text-xl mb-4">Espresso</h3>
+    <ul className="list-disc list-inside space-y-2">
+      <li>18g in</li>
+      <li>36g out</li>
+      <li>21% extraction</li>
+      <li>110mg CAFFEINE</li>
+    </ul>
+  </div>
+
+  <div>
+    <h3 className="text-purple-500 font-bold text-xl mb-4">Pour Over</h3>
+    <ul className="list-disc list-inside space-y-2">
+      <li>18g in</li>
+      <li>300g out</li>
+      <li>21% extraction</li>
+      <li>170mg CAFFEINE</li>
+    </ul>
+  </div>
+</div>
 > **Finding:** Caffeine content increases with the contact time of water.
 
 ## SO WHAT DENIZ?
