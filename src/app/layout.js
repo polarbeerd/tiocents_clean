@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <body className="bg-[#0D0D0D] text-[#E5E5E5] min-h-screen flex flex-col">
         <header className="w-full py-4 flex justify-center border-b border-gray-700 text-xl font-bold">
           <Link href="/" className="hover:opacity-80 transition-opacity">
-            tiocents
+            HomePage
           </Link>
         </header>
 

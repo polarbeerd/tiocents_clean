@@ -15,7 +15,7 @@ export default function LandingPage() {
         more.
       </p>
       <Link
-        href="/posts"
+        href="/tiocents"
         className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
       >
         Browse Posts →

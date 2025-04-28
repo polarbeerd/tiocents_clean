@@ -1,8 +1,7 @@
 import { getAllPosts } from "@/lib/getAllPosts";
-import TopTabs from "@/components/TopTabs";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Suspense } from "react";
-
+import BlogFeed from "@/components/tiocents/BlogFeed";
 export const metadata = {
   title: "Posts | TioCents",
   description: "Explore all writings and ideas on TioCents.",
@@ -18,7 +17,7 @@ export default async function PostsPage() {
           <div className="text-center py-10 text-gray-500">Loading...</div>
         }
       >
-        <TopTabs posts={posts} />
+        <BlogFeed posts={posts} />
       </Suspense>
       <ScrollToTop />
     </div>
