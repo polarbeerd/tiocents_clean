@@ -7,21 +7,15 @@ export function getAllPosts() {
   const filenames = fs.readdirSync(postsDirectory);
 
   const posts = filenames
-    .filter((filename) => filename.endsWith(".mdx")) // 💥 Only .mdx files
+    .filter((filename) => filename.endsWith(".mdx")) // Only .mdx files
     .map((filename) => {
-      const filePath = path.join(postsDirectory, filename);
-      const fileContents = fs.readFileSync(filePath, "utf8");
+      const fullPath = path.join(postsDirectory, filename);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
       const { data } = matter(fileContents);
 
       return {
         slug: filename.replace(/\.mdx$/, ""),
-        title: data.title || "",
-        description: data.description || "",
-        date: data.date || "",
-        coverImage: data.coverImage || "",
-        authorName: data.authorName || "",
-        authorImage: data.authorImage || "",
-        category: data.category || "",
+        ...data,
       };
     });
 
