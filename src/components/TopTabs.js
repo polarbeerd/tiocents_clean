@@ -32,7 +32,7 @@ export default function TopTabs({ posts = [] }) {
       ? post.authorName === selectedAuthor
       : true;
     const matchCategory =
-      activeTab === "All" ? true : post.category === activeTab;
+      activeTab === "All" ? true : post.categories?.includes(activeTab); // <-- NEW!
     return matchAuthor && matchCategory;
   });
 
@@ -92,33 +92,43 @@ export default function TopTabs({ posts = [] }) {
                 {/* Title */}
                 <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
 
-                {/* Author Row */}
-                <div className="flex items-center gap-3 text-gray-400 text-sm mb-2">
-                  {/* Author Image */}
-                  <Image
-                    src={post.authorImage}
-                    alt={post.authorName}
-                    width={24}
-                    height={24}
-                    className="rounded-full object-cover"
-                  />
+                <div className="flex items-center justify-between flex-wrap gap-2 text-gray-400 text-xs mb-2">
+                  {/* Left: Avatar + Author + Date + Reading Time */}
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <Image
+                      src={post.authorImage}
+                      alt={post.authorName}
+                      width={24}
+                      height={24}
+                      className="rounded-full object-cover"
+                    />
+                    <span className="font-medium">{post.authorName}</span>
+                    <span>•</span>
+                    <span>
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
+                    </span>
+                    <span>•</span>
+                    <span>{post.readingTime || 3} min read</span>
+                  </div>
 
-                  {/* Name */}
-                  <span>{post.authorName}</span>
-                  <span>•</span>
-
-                  {/* Date */}
-                  <span>
-                    {new Date(post.date).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </span>
-                  <span>•</span>
-
-                  {/* Estimated Reading Time */}
-                  <span>{post.readingTime || 3} min read</span>
+                  {/* Right: Categories */}
+                  <div className="flex items-center gap-2 flex-wrap">
+                    {(Array.isArray(post.categories)
+                      ? post.categories
+                      : [post.categories]
+                    )?.map((category) => (
+                      <span
+                        key={category}
+                        className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded-full text-[11px]"
+                      >
+                        {category}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Description */}
