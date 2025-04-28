@@ -9,7 +9,7 @@ export default function HomePage() {
       {/* Dreamy Quote at the Top */}
       <div className="absolute top-12 text-center">
         <h1 className="text-4xl md:text-5xl font-light tracking-wide mb-4">
-          "Where Ideas Float Freely."
+          &quot;Where Ideas Float Freely.&quot;{" "}
         </h1>
         <p className="text-gray-400 text-sm md:text-base">
           Enter the space where thoughts, creations, and dreams connect.
