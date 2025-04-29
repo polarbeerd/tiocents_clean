@@ -1,5 +1,5 @@
 "use client";
-import { Home, Users } from "lucide-react"; // 🆕 import icons
+import { Home, Users } from "lucide-react";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -13,7 +13,6 @@ export default function BottomNav() {
   useEffect(() => {
     function onScroll() {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY > lastScrollY) {
         setHidden(true);
       } else {
@@ -30,13 +29,12 @@ export default function BottomNav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [lastScrollY, timeoutId]);
 
-  // 🔥 ONLY AFTER all hooks are called, we can now safely do:
   if (pathname === "/") {
     return null;
   }
 
   const navItems = [
-    { label: "Home", href: "/tiocents", icon: Home },
+    { label: "Posts", href: "/tiocents", icon: Home },
     { label: "Authors", href: "/tiocents/authors", icon: Users },
   ];
 
@@ -46,25 +44,37 @@ export default function BottomNav() {
         hidden ? "translate-y-full" : "translate-y-0"
       } shadow-lg`}
     >
-      {navItems.map((item) => (
-        <Link
-          key={item.label}
-          href={item.href}
-          className={`flex flex-col items-center text-xs transition-all ${
-            pathname.startsWith(item.href)
-              ? "text-white animate-bounce-short"
-              : "text-gray-400 hover:text-gray-200"
-          }`}
-          onClick={() => {
-            if (typeof window !== "undefined" && "vibrate" in navigator) {
-              navigator.vibrate(50);
-            }
-          }}
-        >
-          <item.icon className="w-6 h-6" />
-          {item.label}
-        </Link>
-      ))}
+      {navItems.map((item) => {
+        let isActive = false;
+
+        if (item.href === "/tiocents") {
+          isActive =
+            (pathname === "/tiocents" || pathname.startsWith("/tiocents/")) &&
+            !pathname.startsWith("/tiocents/authors");
+        } else if (item.href === "/tiocents/authors") {
+          isActive = pathname.startsWith("/tiocents/authors");
+        }
+
+        return (
+          <Link
+            key={item.label}
+            href={item.href}
+            className={`flex flex-col items-center text-xs transition-all ${
+              isActive
+                ? "text-white animate-bounce-short"
+                : "text-gray-400 hover:text-gray-200"
+            }`}
+            onClick={() => {
+              if (typeof window !== "undefined" && "vibrate" in navigator) {
+                navigator.vibrate(50);
+              }
+            }}
+          >
+            <item.icon className="w-6 h-6" />
+            {item.label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }
