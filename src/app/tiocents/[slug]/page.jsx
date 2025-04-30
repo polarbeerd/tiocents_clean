@@ -103,7 +103,7 @@ export default async function PostPage({ params }) {
             {relatedPosts.map((post) => (
               <Link
                 key={post.slug}
-                href={`/posts/${post.slug}`}
+                href={`/tiocents/${post.slug}`}
                 className="group block bg-[#1C1C1F] rounded-2xl overflow-hidden shadow hover:shadow-lg hover:scale-[1.02] transition-all"
               >
                 {post.coverImage && (
