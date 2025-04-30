@@ -14,7 +14,7 @@ export default function Comments() {
     script.setAttribute("data-category-id", "DIC_kwDOOg_DZs4Cpi5q"); // CHANGE THIS
     script.setAttribute("data-mapping", "pathname"); // we already decided this
     script.setAttribute("data-strict", "0");
-    script.setAttribute("data-reactions-enabled", "1"); // enable reaction emojis
+    script.setAttribute("data-reactions-enabled", "0"); // enable reaction emojis
     script.setAttribute("data-emit-metadata", "0");
     script.setAttribute("data-theme", "preferred_color_scheme"); // you can later toggle this
     script.setAttribute("data-lang", "en");
