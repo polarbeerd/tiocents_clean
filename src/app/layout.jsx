@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header.js";
 export const metadata = {
-  title: "TioCents",
+  title: "Hello, You.",
   description: "Explore new ideas and stories.",
 };
 
