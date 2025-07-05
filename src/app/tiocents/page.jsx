@@ -11,15 +11,17 @@ export default async function PostsPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="max-w-2xl mx-auto p-4 pb-32">
-      <Suspense
-        fallback={
-          <div className="text-center py-10 text-gray-500">Loading...</div>
-        }
-      >
-        <BlogFeed posts={posts} />
-      </Suspense>
-      <ScrollToTop />
+    <div className="w-full px-4">
+      <div className="max-w-2xl mx-auto pb-32">
+        <Suspense
+          fallback={
+            <div className="text-center py-10 text-gray-500">Loading...</div>
+          }
+        >
+          <BlogFeed posts={posts} />
+        </Suspense>
+        <ScrollToTop />
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function PostCard({ post }) {
   return (
     <Link
       href={`/tiocents/${post.slug}`}
-      className="bg-[#1C1C1F] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:bg-[#27272a] transition-all duration-150"
+      className="w-full bg-[#1C1C1F] rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:bg-[#27272a] transition-all duration-150"
     >
       {/* Cover Image */}
       <div className="relative w-full h-48">
@@ -23,10 +23,10 @@ export default function PostCard({ post }) {
       {/* Content */}
       <div className="p-5">
         {/* Title */}
-        <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+        <h2 className="text-2xl font-bold mb-2 break-words">{post.title}</h2>
 
         {/* Info Row */}
-        <div className="flex items-center justify-between flex-wrap gap-2 text-gray-400 text-xs mb-2">
+        <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-gray-400 text-xs mb-2 break-words">
           {/* Left Side */}
           <div className="flex items-center gap-2 flex-wrap">
             <Image
@@ -48,7 +48,6 @@ export default function PostCard({ post }) {
             <span>•</span>
             <span>{post.readingTime || 3} min read</span>
           </div>
-
           {/* Right Side */}
           <div className="flex items-center gap-2 flex-wrap">
             {(Array.isArray(post.categories)
@@ -66,7 +65,7 @@ export default function PostCard({ post }) {
         </div>
 
         {/* Description */}
-        <p className="text-gray-300 text-sm">{post.description}</p>
+        <p className="text-gray-300 text-sm break-words">{post.description}</p>
       </div>
     </Link>
   );

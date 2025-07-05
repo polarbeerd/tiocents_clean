@@ -66,7 +66,6 @@ export default async function PostPage({ params }) {
           />
         </div>
       )}
-
       {/* Title & Info */}
       <div className="text-center mb-10">
         <h1 className="text-5xl font-extrabold leading-tight tracking-tight mb-6">
@@ -82,9 +81,8 @@ export default async function PostPage({ params }) {
           • {readingTime} min read
         </div>
       </div>
-
       {/* Content */}
-      <article className="prose prose-invert prose-lg leading-relaxed mx-auto mb-20">
+      <article className="prose prose-invert prose-lg leading-relaxed mx-auto mb-20 max-w-full overflow-x-auto break-words">
         {content}
       </article>
       {/* Comments */}

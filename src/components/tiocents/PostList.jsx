@@ -10,7 +10,7 @@ export default function PostList({ posts }) {
   }
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-full">
       {posts.map((post) => (
         <PostCard key={post.slug} post={post} />
       ))}
