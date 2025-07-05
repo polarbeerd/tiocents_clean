@@ -2,7 +2,7 @@
 
 export default function CategoryTabs({ categories, activeTab, setActiveTab }) {
   return (
-    <div className="w-full overflow-x-auto sm:overflow-visible mt-4 mb-4 px-4 scrollbar-hidden">
+    <div className="w-full overflow-x-auto sm:overflow-visible mt-4 mb-4 px-4 scrollbar-hide">
       <div className="flex gap-3 whitespace-nowrap w-max mx-auto">
         {categories.map((category) => (
           <button
