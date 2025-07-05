@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./globals.css";
-import BottomNav from "@/components/BottomNav";
+import BottomNav from "@/components/tiocents/BottomNav";
 import { Suspense } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
@@ -23,11 +23,8 @@ export default function RootLayout({ children }) {
 
         <main className="flex-grow">{children}</main>
 
-        <Suspense fallback={null}>
-          <BottomNav />
-        </Suspense>
+        <Suspense fallback={null}></Suspense>
         <Analytics />
-
         <SpeedInsights />
       </body>
     </html>

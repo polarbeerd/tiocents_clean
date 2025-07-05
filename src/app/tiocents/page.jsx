@@ -1,5 +1,5 @@
 import { getAllPosts } from "@/lib/getAllPosts";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTop from "@/components/tiocents/ScrollToTop";
 import { Suspense } from "react";
 import BlogFeed from "@/components/tiocents/BlogFeed";
 export const metadata = {

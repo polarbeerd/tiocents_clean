@@ -7,7 +7,8 @@ import MDXComponents from "@/components/MDXComponents";
 import Image from "next/image";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/getAllPosts"; // moved helper here
-import Comments from "@/components/Comments";
+import Comments from "@/components/tiocents/Comments";
+import ScrollToTop from "@/components/tiocents/ScrollToTop";
 
 // Static params
 export async function generateStaticParams() {
@@ -136,6 +137,7 @@ export default async function PostPage({ params }) {
           </div>
         </section>
       )}
+      <ScrollToTop />
     </div>
   );
 }

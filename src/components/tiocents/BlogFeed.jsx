@@ -14,11 +14,11 @@ export default function BlogFeed({ posts = [] }) {
   const categories = [
     "All",
     "Thoughts",
+    "Art",
     "Economy",
     "Sports",
     "Music",
     "Travel",
-    "Gaming",
     "Health",
   ];
 
