@@ -53,7 +53,7 @@ export default async function PostPage({ params }) {
     .slice(0, 3);
 
   return (
-    <div className="max-w-3xl mx-auto px-4 pb-24">
+    <div className="max-w-3xl mx-auto px-4 pb-24 mt-4">
       {/* Cover Image */}
       {data.coverImage && (
         <div className="relative w-full h-[350px] sm:h-[450px] rounded-2xl overflow-hidden mb-12">
