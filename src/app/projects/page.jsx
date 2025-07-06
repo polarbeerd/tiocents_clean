@@ -4,13 +4,15 @@ export default function ProjectsPage() {
       <h1 className="text-3xl font-bold mb-6">Side Projects</h1>
       <ul className="list-disc pl-6 text-gray-400 space-y-2">
         <li>
-          <span className="font-semibold text-white">Project 1:</span> A cool
-          tool for tracking Bitcoin price trends.
+          <span className="font-semibold text-white">Project 1:</span> DIY cold
+          drip tower with a simple twist that eliminates the loss off
+          hydrostatic pressure due to height loss over time.
         </li>
         <li>
-          <span className="font-semibold text-white">Project 2:</span> An art
-          generator using AI and React.
+          <span className="font-semibold text-white">Project 2:</span> Quiz
+          night / trivia point tracker app for easier management.
         </li>
+
         {/* Add more projects as you like */}
       </ul>
     </div>
