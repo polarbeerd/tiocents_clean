@@ -78,6 +78,7 @@ export default function AboutMe() {
             <li>🇬🇧 English – IELTS 8.0</li>
             <li>🇪🇸 Spanish – B2 (probably 😅)</li>
             <li>🇩🇪 German – A2 (probably 😅)</li>
+            <li>☕️ Coffee – C2 (precisely 😅)</li>
           </ul>
         </div>
         <div>
