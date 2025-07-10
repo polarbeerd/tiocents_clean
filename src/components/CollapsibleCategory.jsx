@@ -43,7 +43,7 @@ export default function CollapsibleCategory({
   const sizeClasses = {
     base: {
       padding: "p-6",
-      titleText: "text-xl",
+      titleText: "text-2xl",
       spacing: "mb-6",
       rounded: "rounded-2xl",
     },

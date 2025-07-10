@@ -21,7 +21,7 @@ export default function HomePage() {
         {/* TioCents Blog Card */}
         <Link
           href="/tiocents"
-          className="group bg-[#1c1c1f] p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          className="group bg-[#1c1c1f] p-8 rounded-3xl border border-gray-700/40 shadow-lg flex flex-col justify-center items-center text-center transition-all duration-300 md:hover:scale-105 md:hover:shadow-xl md:hover:border-purple-500/40"
         >
           <BookOpen className="w-12 h-12 mb-4 text-gray-300 group-hover:text-white transition-colors" />
           <h2 className="text-3xl font-semibold group-hover:text-white transition-colors mb-2">
@@ -35,7 +35,7 @@ export default function HomePage() {
         {/* Personal / About Me Card */}
         <Link
           href="/about"
-          className="group bg-[#1c1c1f] p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          className="group bg-[#1c1c1f] p-8 rounded-3xl border border-gray-700/40 shadow-lg flex flex-col justify-center items-center text-center transition-all duration-300 md:hover:scale-105 md:hover:shadow-xl md:hover:border-purple-500/40"
         >
           <User className="w-12 h-12 mb-4 text-gray-300 group-hover:text-white transition-colors" />
           <h2 className="text-3xl font-semibold group-hover:text-white transition-colors mb-2">
@@ -49,7 +49,7 @@ export default function HomePage() {
         {/* Side Projects Card */}
         <Link
           href="/projects"
-          className="group bg-[#1c1c1f] p-8 rounded-3xl flex flex-col justify-center items-center text-center shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          className="group bg-[#1c1c1f] p-8 rounded-3xl border border-gray-700/40 shadow-lg flex flex-col justify-center items-center text-center transition-all duration-300 md:hover:scale-105 md:hover:shadow-xl md:hover:border-purple-500/40"
         >
           <Hammer className="w-12 h-12 mb-4 text-gray-300 group-hover:text-white transition-colors" />
           <h2 className="text-3xl font-semibold group-hover:text-white transition-colors mb-2">

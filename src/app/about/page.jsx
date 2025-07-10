@@ -15,7 +15,7 @@ export default function AboutMe() {
       {/* Social Links */}
       <div className="flex justify-center gap-6 mb-10">
         <a
-          href="https://www.youtube.com/@yourchannel"
+          href="https://www.youtube.com/@tiodeniz"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-red-500 transition-colors"
@@ -23,7 +23,7 @@ export default function AboutMe() {
           <Youtube size={28} />
         </a>
         <a
-          href="https://www.instagram.com/yourusername"
+          href="https://www.instagram.com/tiodeniz/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-pink-500 transition-colors"
@@ -31,7 +31,7 @@ export default function AboutMe() {
           <Instagram size={28} />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/dmisirli/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-blue-500 transition-colors"
@@ -39,7 +39,7 @@ export default function AboutMe() {
           <Linkedin size={28} />
         </a>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/polarbeerd"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"
@@ -47,7 +47,7 @@ export default function AboutMe() {
           <Github size={28} />
         </a>
         <a
-          href="mailto:yourmail@example.com"
+          href="mailto:mail@denizmisirli.com"
           className="text-gray-400 hover:text-green-400 transition-colors"
         >
           <Mail size={28} />
