@@ -69,13 +69,37 @@ export default function AboutMe() {
           </span>
         </p>
       </div>
+      <CollapsibleCategory title="Languages">
+        <ul className="text-gray-300 text-lg space-y-2 text-center">
+          <li>Turkish – Native</li>
+          <li>🇬🇧 English – IELTS 8.0</li>
+          <li>🇪🇸 Spanish – B2 (probably 😅)</li>
+          <li>🇩🇪 German – A2 (probably 😅)</li>
+          <li>☕️ Coffee – C2 (precisely 😅)</li>
+        </ul>
+      </CollapsibleCategory>
 
-      {/* Languages + Interests */}
+      <CollapsibleCategory title="Interests">
+        <ul className="text-gray-300 text-lg space-y-2 text-center">
+          <li>
+            🎸 Guitar and many sports (currently addicted to tennis — 1v1?)
+          </li>
+          <li>
+            📉 Macroeconomy & investing (yes I’m a crypto guy, yes I wanna
+            retire early)
+          </li>
+          <li>✈️ Who doesn't love exploring new places?</li>
+          <li>
+            🧠 Exploring niche ideas, weird facts, and better ways of living
+          </li>
+        </ul>
+      </CollapsibleCategory>
+      {/* Languages + Interests
       <div className="grid md:grid-cols-2 gap-10 mb-16">
         <div>
           <h2 className="text-2xl font-bold mb-4 text-center">Languages</h2>
           <ul className="text-gray-300 text-lg space-y-2 text-center">
-            <li>🇹🇷 Turkish – Native</li>
+            <li>Turkish – Native</li>
             <li>🇬🇧 English – IELTS 8.0</li>
             <li>🇪🇸 Spanish – B2 (probably 😅)</li>
             <li>🇩🇪 German – A2 (probably 😅)</li>
@@ -98,7 +122,7 @@ export default function AboutMe() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       {/* Collapsible Sections */}
       <CollapsibleCategory title="🎓 Education Years">
@@ -196,13 +220,21 @@ export default function AboutMe() {
             Learned software development, basically helped me to build this site
             and other side projects.
           </p>
+          <p>
+            Been in product team, proposed ideas and implemented Jira from
+            scratch for bug tracking, issue tracking and agile project
+            management.
+          </p>
         </CollapsibleCategory>
         <CollapsibleCategory
           title="Hype - Jr. Web Analyst / Istanbul / 2022 / 5mo"
           variant="white"
           size="sub"
         >
-          <p>Yeah</p>
+          <p>
+            Learned about web analytics, CEO and it's tools such as Google Tag
+            Manager, Google Analytics.
+          </p>
         </CollapsibleCategory>
         <CollapsibleCategory
           title="Product Manager / Customer Care Intern at Wacom - Dusseldorf / 2018 / 3mo"
@@ -226,14 +258,20 @@ export default function AboutMe() {
           variant="white"
           size="sub"
         >
-          <p>Yeah</p>
+          <p>
+            Biggest factory in Turkey. Been to briefings of the components and
+            products, learned about the production lines and processes.
+          </p>
         </CollapsibleCategory>
         <CollapsibleCategory
           title="Iskenderun Iron & Steel Works - Electronic Automation Intern / Hatay / 2016 / 1mo"
           variant="white"
           size="sub"
         >
-          <p>Yeah</p>
+          <p>
+            Blue collar experience all day in the field surrounded by metal
+            dust. Controlled and tracking health of the machines.
+          </p>
         </CollapsibleCategory>
       </CollapsibleCategory>
 
