@@ -69,9 +69,9 @@ export default function AboutMe() {
           </span>
         </p>
       </div>
-      <CollapsibleCategory title="Languages">
+      <CollapsibleCategory title="🗣️ Languages">
         <ul className="text-gray-300 text-lg space-y-2 text-center">
-          <li>Turkish – Native</li>
+          <li>🇹🇷 Turkish – Native</li>
           <li>🇬🇧 English – IELTS 8.0</li>
           <li>🇪🇸 Spanish – B2 (probably 😅)</li>
           <li>🇩🇪 German – A2 (probably 😅)</li>
@@ -79,7 +79,7 @@ export default function AboutMe() {
         </ul>
       </CollapsibleCategory>
 
-      <CollapsibleCategory title="Interests">
+      <CollapsibleCategory title="🤯 Interests">
         <ul className="text-gray-300 text-lg space-y-2 text-center">
           <li>
             🎸 Guitar and many sports (currently addicted to tennis — 1v1?)
