@@ -1,6 +1,7 @@
 import { Youtube, Instagram, Linkedin, Github, Mail } from "lucide-react";
 import CollapsibleCategory from "@/components/CollapsibleCategory";
 import RainbowText from "@/components/RainbowText";
+import Twemoji from "@/components/Twemoji";
 
 export default function AboutMe() {
   return (
@@ -71,15 +72,27 @@ export default function AboutMe() {
       </div>
       <CollapsibleCategory title="🗣️ Languages">
         <ul className="text-gray-300 text-lg space-y-2 text-center">
-          <li>🇹🇷 Turkish – Native</li>
-          <li>🇬🇧 English – IELTS 8.0</li>
-          <li>🇪🇸 Spanish – B2 (probably 😅)</li>
-          <li>🇩🇪 German – A2 (probably 😅)</li>
-          <li>☕️ Coffee – C2 (precisely 😅)</li>
+          <li>
+            <Twemoji>🇹🇷</Twemoji> Turkish – Native
+          </li>
+
+          <li>
+            <Twemoji>🇬🇧</Twemoji> English – IELTS 8.0
+          </li>
+          <li>
+            <Twemoji>🇪🇸</Twemoji> Spanish – B2 (probably)
+          </li>
+
+          <li>
+            <Twemoji>🇩🇪</Twemoji> German – A2 (probably)
+          </li>
+          <li>
+            <Twemoji>☕</Twemoji> Coffee – C2 (precisely)
+          </li>
         </ul>
       </CollapsibleCategory>
 
-      <CollapsibleCategory title="🤯 Interests">
+      <CollapsibleCategory title="✨ Interests">
         <ul className="text-gray-300 text-lg space-y-2 text-center">
           <li>
             🎸 Guitar and many sports (currently addicted to tennis — 1v1?)

@@ -54,3 +54,10 @@ body {
 .animate-bounce-short {
   animation: bounceShort 0.3s ease;
 }
+
+img.emoji {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+  display: inline-block;
+}
